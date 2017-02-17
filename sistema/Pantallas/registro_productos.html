@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registro Productos</title>
+	<meta charset="utf-8">
+    <link href="../CSS/estilos.css" rel="stylesheet" type="text/css">
+    <script src="../JavaScript/producto.js" type="text/javascript" language="javascript"></script>
+    <script src="../JavaScript/utilidades.js" type="text/javascript" language="javascript"></script>
+</head>
+<body>
+	<form action="../Controladores/controlador_producto.php" method="post" id="">
+		<input type="hidden" name="accion" value="agregar_producto">
+		<table align="center" class="tab_for">
+			<tr>
+				<td class="titulo" colspan="2" align="center">Registrar Producto</td>
+			</tr>
+			<tr>
+				<td>Codigo: </td>
+				<td>
+					<input type="text" name="cod_pro" id="cod_pro" maxlength="15" size="15" placeholder="PXXX" class="inp"> <!-- El Name lo pide PHP y el id lo pide JS/CSS-->
+				</td>
+			</tr>
+				<td>Nombre: </td>
+				<td>
+					<input class="inp" type="text" name="nom_pro" id="nom_pro" maxlength="50" size="50" placeholder="Salsa de Tomate">
+				</td>
+			<tr>
+				<td>Precio: </td>
+				<td>
+					<input class="inp" type="text" name="pre_pro" id="pre_pro" placeholder="15.32 Bs">	
+				</td>
+			</tr>
+			<tr>
+				<td>Cantidad en Existencia: </td>
+				<td>
+					<input class="inp" type="text" name="exi_pro" id="exi_pro" placeholder="3000 unid | 4 gr | 5 lts" onKeyPress="return validar_numeros(event)">	
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" value="Guardar" name="btn_gua" id="btn_gua" >
+				</td>
+			</tr>	
+		</table>
+	</form>
+</body>
+</html>

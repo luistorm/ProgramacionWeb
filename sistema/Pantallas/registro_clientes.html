@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registro Clientes</title>
+    <meta charset="utf-8">
+    <link href="../CSS/estilos.css" rel="stylesheet" type="text/css">
+    <script src="../JavaScript/cliente.js" type="text/javascript" language="javascript"></script>
+    <script src="../JavaScript/utilidades.js" type="text/javascript" language="javascript"></script>
+</head>
+<body>
+	<form action="../Controladores/controlador_cliente.php" method="post" id="formulario"> <!--../ significa salgase una carpeta -->
+        <input type="hidden" name="accion" value="agregar_cliente">
+        <table align="center" class="tab_for">
+            <tr>
+                <td colspan="2" align="center" class="titulo">Registrar cliente</td>
+            </tr>
+            <tr>
+                <td>Identificación :</td>
+                <td>
+                    <input type="text" name="ide_cli" id="ide_cli" class="inp" maxlength="12" size="12" placeholder="Cédula/RIF" onKeyPress="return validar_numeros(event)"> <!-- El Name lo pide PHP y el id lo pide JS/CSS-->
+                </td>
+            </tr>
+            <tr>
+                <td>Razón Social: </td>
+                <td>
+                    <input type="text" name="nom_cli" id="nom_cli" class="inp" maxlength="60" size="60" placeholder="Nombre Persona/Empresa">
+                </td>
+            </tr>
+            <tr>
+                <td>Dirección: </td>
+                <td>
+                    <textarea name="dir_cli" id="dir_cli" maxlength="100" class="inp" rows="4" cols="50" placeholder="Direccion"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Teléfono: </td>
+                <td>
+                    <input type="text" name="tel_cli" id="tel_cli" class="opcional" class="inp" maxlength="15" size="15" placeholder="Ej:04xx-xxxxxxx" onkeypress="return validar_numeros(event)">	
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="Guardar" onClick="validar_cliente()">
+                </td>
+            </tr>	
+        </table>
+	</form>
+</body>
+</html>

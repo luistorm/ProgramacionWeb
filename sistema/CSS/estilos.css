@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* CSS Document */
+#superior
+{
+	height:100px;
+}
+
+#menu
+{
+	float:left;
+	width:20%;
+	height:800px;
+}
+
+#cuerpo
+{
+	float:left;
+	width:80%;
+	height:800px;	
+}
+
+#pie
+{
+	clear:both;
+	height:50px;
+}
+
+.tab_for
+{
+	border-color: black;
+	border-style: outset;
+	border-top-color: #868686;
+	border-left-color: #868686;
+	border-bottom-color: #C6C6C6;
+	border-right-color: #C6C6C6;
+	border-radius: 5px;
+	background-color: #D2F08F;
+	width: 100%;
+}
+
+.titulo
+{
+	background-color:#93CD99;
+	color:#9F658D;
+	border-bottom-style: solid;
+	border-bottom-color: #54AA9F;
+}
+
+.men 
+{
+	background-color:#93CD99;
+	color:#9F658D;
+	text-align: center;
+}
+
+.inp
+{
+	border-width: 3px;
+	border-radius: 3px;
+}
+
+#menu ul
+{
+	padding: 0px;
+	background-color: #FFF;	
+}
+
+#menu li
+{
+	list-style-type: none;
+	height: 31px;
+	border-bottom-color: #CCC;
+	border-bottom-style: groove;
+	border-bottom-width: thin;
+	text-align:center;
+	line-height: 31px;
+}
+
+#menu .sub,.cli,.pro,.fac,.for,.repo
+{
+	display:none;
+}
+
+#menu li:hover
+{
+	background-color: #D2F08F;	
+	font-size: 20px;
+}
+
+#menu .men:hover 
+{
+	background-color:#54AA9F;
+}
+#menu a
+{
+	text-decoration: none;
+	color: #54AA9F;
+}
+.btn_titulo
+{
+	background-color: #93CD99;
+}
+.btn_tab
+{
+	background-color: #D2F08F;	
+}
+.a_btn
+{
+	text-decoration: none;
+}
+.zoom:hover 
+{
+	color:#9F658D;
+}

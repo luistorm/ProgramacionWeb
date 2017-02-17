@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="CSS/estilos.css" rel="stylesheet" type="text/css">
+<script src="JavaScript/menu.js" type="text/javascript" language="javascript"></script>
+<title>Sistema Facturación</title>
+</head>
+
+<body>
+	<div id="superior"></div>
+    <div id="menu">
+    	<ul>
+        	<li class="men" onClick="menu_cli()">Clientes</li>
+            <li class="cli" class="sub"><a href="Pantallas/registro_clientes.html" target="centro">Agregar Cliente</a></li>
+            <li class="cli" class="sub"><a href="Controladores/controlador_cliente.php?accion=listar_cliente" target="centro">Listar Clientes</a></li>
+            <li class="cli" class="sub"><a href="#">Buscar Cliente</a></li>
+            <li class="men" onClick="menu_pro()">Productos</li>
+            <li class="pro" class="sub" ><a href="Pantallas/registro_productos.html" target="centro">Agregar Producto</a></li>
+            <li class="pro" class="sub" ><a href="Controladores/controlador_producto.php?accion=listar_producto" target="centro">Listar Productos</a></li>
+            <li class="pro" class="sub" ><a href="#">Buscar Producto</a></li>
+            <li class="men" onClick="menu_for()">Forma de Pago</li>
+            <li class="for" class="sub"><a href="Pantallas/registro_forma.html" target="centro">Agregar F. Pago</a></li>
+            <li class="for" class="sub"><a href="Controladores/controlador_forma.php?accion=listar_forma" target="centro">Listar F. Pago</a></li>
+            <li class="for" class="sub"><a href="#">Buscar F. Pago</a></li>
+            <li class="men" onClick="menu_fac()">Facturas</li>
+            <li class="fac" class="sub"><a href="Pantallas/agregar_factura.php" target="centro">Agregar Factura</a></li>
+            <li class="fac" class="sub"><a href="Controladores/controlador_factura.php?accion=listar_facturas" target="centro">Listar Facturas</a></li>
+            <li class="fac" class="sub"><a href="#">Buscar Factura</a></li>
+            <li class="men" onClick="menu_repo()">Reportes</li>
+            <li class="repo" class="sub"><a href="Controladores/controlador_factura.php?accion=factura_mas" target="centro">Facturas Mas Costosas </a></li>
+            <li class="repo" class="sub"><a href="Controladores/controlador_factura.php?accion=clientes_fieles" target="centro">Clientes Fieles</a></li>
+            <li class="repo" class="sub"><a href="Controladores/controlador_factura.php?accion=mejores_clientes" target="centro">Mejores Clientes</a></li>
+            <li class="repo" class="sub"><a href="Controladores/controlador_factura.php?accion=formas" target="centro">Formas de Pago Mas Usadas</a></li>
+            <li class="repo" class="sub"><a href="Controladores/controlador_factura.php?accion=mas_comprados" target="centro">Productos Mas Comprados</a></li>
+        </ul>
+    </div>
+	<div id="cuerpo">
+    	<iframe width="100%" height="100%" frameborder="0" name="centro" id="centro">
+        	
+        </iframe>
+    </div>
+    <div id="pie"></div>
+</body>
+</html>
